@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20191105 15:48:56.538" rpa="false">
+<suite id="s1" name="01 LOHP" source="C:\Development\KSS_automation\Tests\01_LOHP.robot">
+<test id="s1-t1" name="Logged out user must register to unlock article">
+<kw name="Begin Web Test" library="common_res" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20191105 15:48:56.822" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20191105 15:48:56.822" endtime="20191105 15:49:02.468"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20191105 15:49:02.468" endtime="20191105 15:49:06.615"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:48:56.821" endtime="20191105 15:49:06.616"></status>
+</kw>
+<kw name="Open Homepage" library="KSL_res">
+<kw name="Loadme" library="homepage">
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20191105 15:49:06.624" level="INFO">Opening url 'https://schoolleaders.uat-keylabs.com/'</msg>
+<status status="PASS" starttime="20191105 15:49:06.623" endtime="20191105 15:49:08.856"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>The Key for School Leaders</arg>
+</arguments>
+<msg timestamp="20191105 15:49:08.892" level="INFO">Page title is 'The Key for School Leaders'.</msg>
+<status status="PASS" starttime="20191105 15:49:08.856" endtime="20191105 15:49:08.892"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:06.620" endtime="20191105 15:49:08.892"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:06.618" endtime="20191105 15:49:08.892"></status>
+</kw>
+<kw name="Go to registration page" library="KSL_res">
+<kw name="Go To Page" library="register">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[contains(@href, 'https://schoolleaders.uat-keylabs.com/register/free/?marker=logged-out-hp')]</arg>
+</arguments>
+<msg timestamp="20191105 15:49:08.897" level="INFO">Clicking element 'xpath=//a[contains(@href, 'https://schoolleaders.uat-keylabs.com/register/free/?marker=logged-out-hp')]'.</msg>
+<status status="PASS" starttime="20191105 15:49:08.896" endtime="20191105 15:49:10.371"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Complete the form below to register.</arg>
+</arguments>
+<status status="PASS" starttime="20191105 15:49:10.373" endtime="20191105 15:49:10.404"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:08.895" endtime="20191105 15:49:10.405"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:08.895" endtime="20191105 15:49:10.405"></status>
+</kw>
+<kw name="Select school" library="KSL_res">
+<kw name="Choose My School" library="register">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="newPostcode"]</arg>
+<arg>${POSTCODE}</arg>
+</arguments>
+<msg timestamp="20191105 15:49:10.407" level="INFO">Typing text 'Ch3* St3ps' into text field '//*[@id="newPostcode"]'.</msg>
+<status status="PASS" starttime="20191105 15:49:10.406" endtime="20191105 15:49:10.724"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20191105 15:49:13.726" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191105 15:49:10.725" endtime="20191105 15:49:13.726"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[2]/div[1]/button</arg>
+</arguments>
+<msg timestamp="20191105 15:49:13.727" level="INFO">Clicking button '//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20191105 15:49:13.726" endtime="20191105 15:49:13.908"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20191105 15:49:16.910" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191105 15:49:13.908" endtime="20191105 15:49:16.910"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[2]/ul/li/a</arg>
+</arguments>
+<msg timestamp="20191105 15:49:16.911" level="INFO">Clicking link 'xpath=//div[2]/ul/li/a'.</msg>
+<status status="PASS" starttime="20191105 15:49:16.910" endtime="20191105 15:49:17.168"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Your school</arg>
+</arguments>
+<status status="PASS" starttime="20191105 15:49:17.169" endtime="20191105 15:49:17.209"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20191105 15:49:20.211" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191105 15:49:17.210" endtime="20191105 15:49:20.211"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:10.406" endtime="20191105 15:49:20.211"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:10.405" endtime="20191105 15:49:20.211"></status>
+</kw>
+<kw name="Fill Reg Form" library="KSL_res">
+<kw name="Fill My Form" library="register">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=registerEmail</arg>
+<arg>@{REGDATA}[0]</arg>
+</arguments>
+<msg timestamp="20191105 15:49:20.213" level="INFO">Typing text '0511robot_3@thekeysupport.com' into text field 'id=registerEmail'.</msg>
+<status status="PASS" starttime="20191105 15:49:20.213" endtime="20191105 15:49:20.566"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=registerFirstname</arg>
+<arg>@{REGDATA}[1]</arg>
+</arguments>
+<msg timestamp="20191105 15:49:20.567" level="INFO">Typing text 'Full' into text field 'id=registerFirstname'.</msg>
+<status status="PASS" starttime="20191105 15:49:20.567" endtime="20191105 15:49:20.773"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=registerLastname</arg>
+<arg>@{REGDATA}[2]</arg>
+</arguments>
+<msg timestamp="20191105 15:49:20.774" level="INFO">Typing text 'lw* purplechair' into text field 'id=registerLastname'.</msg>
+<status status="PASS" starttime="20191105 15:49:20.773" endtime="20191105 15:49:21.120"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=registerPassword</arg>
+<arg>@{REGDATA}[3]</arg>
+</arguments>
+<msg timestamp="20191105 15:49:21.121" level="INFO">Typing text 'checkSteps' into text field 'id=registerPassword'.</msg>
+<status status="PASS" starttime="20191105 15:49:21.120" endtime="20191105 15:49:21.386"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button</arg>
+</arguments>
+<msg timestamp="20191105 15:49:21.386" level="INFO">Clicking button '//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20191105 15:49:21.386" endtime="20191105 15:49:21.571"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[@type='submit']</arg>
+</arguments>
+<msg timestamp="20191105 15:49:21.572" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20191105 15:49:21.571" endtime="20191105 15:49:23.725"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Complete your profile</arg>
+</arguments>
+<status status="PASS" starttime="20191105 15:49:23.725" endtime="20191105 15:49:23.765"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20191105 15:49:26.767" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191105 15:49:23.765" endtime="20191105 15:49:26.767"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:20.212" endtime="20191105 15:49:26.767"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:20.212" endtime="20191105 15:49:26.767"></status>
+</kw>
+<kw name="End Web Test" library="common_res" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20191105 15:49:26.768" endtime="20191105 15:49:29.231"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:49:26.767" endtime="20191105 15:49:29.231"></status>
+</kw>
+<status status="PASS" starttime="20191105 15:48:56.820" endtime="20191105 15:49:29.232" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20191105 15:48:56.541" endtime="20191105 15:49:29.237"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="01 LOHP">01 LOHP</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
