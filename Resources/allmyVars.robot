@@ -7,7 +7,8 @@ ${BROWSER}  chrome
 
 # User data
 ${POSTCODE}   Ch3* St3ps
-@{REGDATA}    0511robot_3@thekeysupport.com   Full    lw* purplechair    checkSteps
+@{REGDATA}    0511robot_14@thekeysupport.com   Full    lw* purplechair    checkSteps
+
 
 
 

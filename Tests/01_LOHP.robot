@@ -11,7 +11,10 @@ Logged out user must register to unlock article
     KSL_res.Go to registration page
     KSL_res.Select school
     KSL_res.Fill Reg Form
-# continue with filling the complete your profile form
+    KSL_res.Complete Profile
+    KSL_res.Access KSL from Reg
+
+# continue with accessing KSL
 
 
 
@@ -20,7 +23,6 @@ Logged out user must register to unlock article
 #    KSL_res.Open Homepage
 #    KSL_res.Go to registration page
 #    KSL_res.Select school
-
 
 
 

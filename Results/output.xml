@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20191105 15:48:56.538" rpa="false">
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20191106 15:41:05.163" rpa="false">
 <suite id="s1" name="01 LOHP" source="C:\Development\KSS_automation\Tests\01_LOHP.robot">
 <test id="s1-t1" name="Logged out user must register to unlock article">
 <kw name="Begin Web Test" library="common_res" type="setup">
@@ -9,14 +9,14 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20191105 15:48:56.822" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20191105 15:48:56.822" endtime="20191105 15:49:02.468"></status>
+<msg timestamp="20191106 15:41:05.442" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20191106 15:41:05.442" endtime="20191106 15:41:10.896"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20191105 15:49:02.468" endtime="20191105 15:49:06.615"></status>
+<status status="PASS" starttime="20191106 15:41:10.896" endtime="20191106 15:41:14.917"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:48:56.821" endtime="20191105 15:49:06.616"></status>
+<status status="PASS" starttime="20191106 15:41:05.442" endtime="20191106 15:41:14.917"></status>
 </kw>
 <kw name="Open Homepage" library="KSL_res">
 <kw name="Loadme" library="homepage">
@@ -25,20 +25,20 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20191105 15:49:06.624" level="INFO">Opening url 'https://schoolleaders.uat-keylabs.com/'</msg>
-<status status="PASS" starttime="20191105 15:49:06.623" endtime="20191105 15:49:08.856"></status>
+<msg timestamp="20191106 15:41:14.917" level="INFO">Opening url 'https://schoolleaders.uat-keylabs.com/'</msg>
+<status status="PASS" starttime="20191106 15:41:14.917" endtime="20191106 15:41:20.419"></status>
 </kw>
 <kw name="Title Should Be" library="Selenium2Library">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>The Key for School Leaders</arg>
 </arguments>
-<msg timestamp="20191105 15:49:08.892" level="INFO">Page title is 'The Key for School Leaders'.</msg>
-<status status="PASS" starttime="20191105 15:49:08.856" endtime="20191105 15:49:08.892"></status>
+<msg timestamp="20191106 15:41:20.441" level="INFO">Page title is 'The Key for School Leaders'.</msg>
+<status status="PASS" starttime="20191106 15:41:20.420" endtime="20191106 15:41:20.441"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:06.620" endtime="20191105 15:49:08.892"></status>
+<status status="PASS" starttime="20191106 15:41:14.917" endtime="20191106 15:41:20.441"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:06.618" endtime="20191105 15:49:08.892"></status>
+<status status="PASS" starttime="20191106 15:41:14.917" endtime="20191106 15:41:20.441"></status>
 </kw>
 <kw name="Go to registration page" library="KSL_res">
 <kw name="Go To Page" library="register">
@@ -47,19 +47,19 @@
 <arguments>
 <arg>xpath=//a[contains(@href, 'https://schoolleaders.uat-keylabs.com/register/free/?marker=logged-out-hp')]</arg>
 </arguments>
-<msg timestamp="20191105 15:49:08.897" level="INFO">Clicking element 'xpath=//a[contains(@href, 'https://schoolleaders.uat-keylabs.com/register/free/?marker=logged-out-hp')]'.</msg>
-<status status="PASS" starttime="20191105 15:49:08.896" endtime="20191105 15:49:10.371"></status>
+<msg timestamp="20191106 15:41:20.443" level="INFO">Clicking element 'xpath=//a[contains(@href, 'https://schoolleaders.uat-keylabs.com/register/free/?marker=logged-out-hp')]'.</msg>
+<status status="PASS" starttime="20191106 15:41:20.443" endtime="20191106 15:41:22.379"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>Complete the form below to register.</arg>
 </arguments>
-<status status="PASS" starttime="20191105 15:49:10.373" endtime="20191105 15:49:10.404"></status>
+<status status="PASS" starttime="20191106 15:41:22.379" endtime="20191106 15:41:22.402"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:08.895" endtime="20191105 15:49:10.405"></status>
+<status status="PASS" starttime="20191106 15:41:20.442" endtime="20191106 15:41:22.402"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:08.895" endtime="20191105 15:49:10.405"></status>
+<status status="PASS" starttime="20191106 15:41:20.442" endtime="20191106 15:41:22.402"></status>
 </kw>
 <kw name="Select school" library="KSL_res">
 <kw name="Choose My School" library="register">
@@ -69,59 +69,59 @@
 <arg>//*[@id="newPostcode"]</arg>
 <arg>${POSTCODE}</arg>
 </arguments>
-<msg timestamp="20191105 15:49:10.407" level="INFO">Typing text 'Ch3* St3ps' into text field '//*[@id="newPostcode"]'.</msg>
-<status status="PASS" starttime="20191105 15:49:10.406" endtime="20191105 15:49:10.724"></status>
+<msg timestamp="20191106 15:41:22.403" level="INFO">Typing text 'Ch3* St3ps' into text field '//*[@id="newPostcode"]'.</msg>
+<status status="PASS" starttime="20191106 15:41:22.403" endtime="20191106 15:41:22.674"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20191105 15:49:13.726" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20191105 15:49:10.725" endtime="20191105 15:49:13.726"></status>
+<msg timestamp="20191106 15:41:25.675" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191106 15:41:22.674" endtime="20191106 15:41:25.675"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[2]/div[1]/button</arg>
 </arguments>
-<msg timestamp="20191105 15:49:13.727" level="INFO">Clicking button '//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20191105 15:49:13.726" endtime="20191105 15:49:13.908"></status>
+<msg timestamp="20191106 15:41:25.675" level="INFO">Clicking button '//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20191106 15:41:25.675" endtime="20191106 15:41:25.813"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20191105 15:49:16.910" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20191105 15:49:13.908" endtime="20191105 15:49:16.910"></status>
+<msg timestamp="20191106 15:41:28.815" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191106 15:41:25.813" endtime="20191106 15:41:28.815"></status>
 </kw>
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//div[2]/ul/li/a</arg>
 </arguments>
-<msg timestamp="20191105 15:49:16.911" level="INFO">Clicking link 'xpath=//div[2]/ul/li/a'.</msg>
-<status status="PASS" starttime="20191105 15:49:16.910" endtime="20191105 15:49:17.168"></status>
+<msg timestamp="20191106 15:41:28.815" level="INFO">Clicking link 'xpath=//div[2]/ul/li/a'.</msg>
+<status status="PASS" starttime="20191106 15:41:28.815" endtime="20191106 15:41:29.080"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>Your school</arg>
 </arguments>
-<status status="PASS" starttime="20191105 15:49:17.169" endtime="20191105 15:49:17.209"></status>
+<status status="PASS" starttime="20191106 15:41:29.080" endtime="20191106 15:41:29.103"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20191105 15:49:20.211" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20191105 15:49:17.210" endtime="20191105 15:49:20.211"></status>
+<msg timestamp="20191106 15:41:32.105" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191106 15:41:29.103" endtime="20191106 15:41:32.105"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:10.406" endtime="20191105 15:49:20.211"></status>
+<status status="PASS" starttime="20191106 15:41:22.403" endtime="20191106 15:41:32.105"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:10.405" endtime="20191105 15:49:20.211"></status>
+<status status="PASS" starttime="20191106 15:41:22.402" endtime="20191106 15:41:32.105"></status>
 </kw>
 <kw name="Fill Reg Form" library="KSL_res">
 <kw name="Fill My Form" library="register">
@@ -131,8 +131,8 @@
 <arg>id=registerEmail</arg>
 <arg>@{REGDATA}[0]</arg>
 </arguments>
-<msg timestamp="20191105 15:49:20.213" level="INFO">Typing text '0511robot_3@thekeysupport.com' into text field 'id=registerEmail'.</msg>
-<status status="PASS" starttime="20191105 15:49:20.213" endtime="20191105 15:49:20.566"></status>
+<msg timestamp="20191106 15:41:32.107" level="INFO">Typing text '0511robot_14@thekeysupport.com' into text field 'id=registerEmail'.</msg>
+<status status="PASS" starttime="20191106 15:41:32.107" endtime="20191106 15:41:32.500"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -140,8 +140,8 @@
 <arg>id=registerFirstname</arg>
 <arg>@{REGDATA}[1]</arg>
 </arguments>
-<msg timestamp="20191105 15:49:20.567" level="INFO">Typing text 'Full' into text field 'id=registerFirstname'.</msg>
-<status status="PASS" starttime="20191105 15:49:20.567" endtime="20191105 15:49:20.773"></status>
+<msg timestamp="20191106 15:41:32.501" level="INFO">Typing text 'Full' into text field 'id=registerFirstname'.</msg>
+<status status="PASS" starttime="20191106 15:41:32.501" endtime="20191106 15:41:32.684"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -149,8 +149,8 @@
 <arg>id=registerLastname</arg>
 <arg>@{REGDATA}[2]</arg>
 </arguments>
-<msg timestamp="20191105 15:49:20.774" level="INFO">Typing text 'lw* purplechair' into text field 'id=registerLastname'.</msg>
-<status status="PASS" starttime="20191105 15:49:20.773" endtime="20191105 15:49:21.120"></status>
+<msg timestamp="20191106 15:41:32.685" level="INFO">Typing text 'lw* purplechair' into text field 'id=registerLastname'.</msg>
+<status status="PASS" starttime="20191106 15:41:32.684" endtime="20191106 15:41:32.958"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -158,54 +158,173 @@
 <arg>id=registerPassword</arg>
 <arg>@{REGDATA}[3]</arg>
 </arguments>
-<msg timestamp="20191105 15:49:21.121" level="INFO">Typing text 'checkSteps' into text field 'id=registerPassword'.</msg>
-<status status="PASS" starttime="20191105 15:49:21.120" endtime="20191105 15:49:21.386"></status>
+<msg timestamp="20191106 15:41:32.959" level="INFO">Typing text 'checkSteps' into text field 'id=registerPassword'.</msg>
+<status status="PASS" starttime="20191106 15:41:32.958" endtime="20191106 15:41:33.242"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20191106 15:41:34.257" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20191106 15:41:33.242" endtime="20191106 15:41:34.257"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button</arg>
 </arguments>
-<msg timestamp="20191105 15:49:21.386" level="INFO">Clicking button '//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button'.</msg>
-<status status="PASS" starttime="20191105 15:49:21.386" endtime="20191105 15:49:21.571"></status>
+<msg timestamp="20191106 15:41:34.258" level="INFO">Clicking button '//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20191106 15:41:34.257" endtime="20191106 15:41:34.399"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20191106 15:41:35.402" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20191106 15:41:34.400" endtime="20191106 15:41:35.402"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
-<arg>xpath=//button[@type='submit']</arg>
+<arg>//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button</arg>
 </arguments>
-<msg timestamp="20191105 15:49:21.572" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20191105 15:49:21.571" endtime="20191105 15:49:23.725"></status>
+<msg timestamp="20191106 15:41:35.402" level="INFO">Clicking button '//*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20191106 15:41:35.402" endtime="20191106 15:41:37.867"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until ``text`` appears on the current page.</doc>
 <arguments>
 <arg>Complete your profile</arg>
 </arguments>
-<status status="PASS" starttime="20191105 15:49:23.725" endtime="20191105 15:49:23.765"></status>
+<status status="PASS" starttime="20191106 15:41:37.867" endtime="20191106 15:41:37.907"></status>
+</kw>
+<status status="PASS" starttime="20191106 15:41:32.107" endtime="20191106 15:41:37.907"></status>
+</kw>
+<status status="PASS" starttime="20191106 15:41:32.106" endtime="20191106 15:41:37.907"></status>
+</kw>
+<kw name="Complete Profile" library="KSL_res">
+<kw name="Complete My Profile" library="register">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.form-group:nth-child(1) .btn</arg>
+</arguments>
+<msg timestamp="20191106 15:41:37.909" level="INFO">Clicking element 'css=.form-group:nth-child(1) .btn'.</msg>
+<status status="PASS" starttime="20191106 15:41:37.909" endtime="20191106 15:41:38.084"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20191105 15:49:26.767" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20191105 15:49:23.765" endtime="20191105 15:49:26.767"></status>
+<msg timestamp="20191106 15:41:41.086" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191106 15:41:38.085" endtime="20191106 15:41:41.086"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:20.212" endtime="20191105 15:49:26.767"></status>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=li:nth-child(2) .text</arg>
+</arguments>
+<msg timestamp="20191106 15:41:41.087" level="INFO">Clicking element 'css=li:nth-child(2) .text'.</msg>
+<status status="PASS" starttime="20191106 15:41:41.086" endtime="20191106 15:41:41.226"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:20.212" endtime="20191105 15:49:26.767"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20191106 15:41:44.235" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191106 15:41:41.226" endtime="20191106 15:41:44.235"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>id=registerRole</arg>
+<arg>Headteacher</arg>
+</arguments>
+<msg timestamp="20191106 15:41:44.235" level="INFO">Selecting options from selection list 'id=registerRole' by label Headteacher.</msg>
+<status status="PASS" starttime="20191106 15:41:44.235" endtime="20191106 15:41:44.320"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20191106 15:41:47.321" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191106 15:41:44.320" endtime="20191106 15:41:47.321"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.form-group:nth-child(4) .btn</arg>
+</arguments>
+<msg timestamp="20191106 15:41:47.321" level="INFO">Clicking element 'css=.form-group:nth-child(4) .btn'.</msg>
+<status status="PASS" starttime="20191106 15:41:47.321" endtime="20191106 15:41:47.444"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.show &gt; .inner &gt; .dropdown-menu &gt; li:nth-child(2) .text</arg>
+</arguments>
+<msg timestamp="20191106 15:41:47.445" level="INFO">Clicking element 'css=.show &gt; .inner &gt; .dropdown-menu &gt; li:nth-child(2) .text'.</msg>
+<status status="PASS" starttime="20191106 15:41:47.444" endtime="20191106 15:41:47.608"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<arguments>
+<arg>id=registerReferer</arg>
+<arg>Email from The Key</arg>
+</arguments>
+<msg timestamp="20191106 15:41:47.609" level="INFO">Selecting options from selection list 'id=registerReferer' by label Email from The Key.</msg>
+<status status="PASS" starttime="20191106 15:41:47.609" endtime="20191106 15:41:47.703"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20191106 15:41:50.703" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191106 15:41:47.703" endtime="20191106 15:41:50.703"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//button[@type='submit']</arg>
+</arguments>
+<msg timestamp="20191106 15:41:50.703" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20191106 15:41:50.703" endtime="20191106 15:42:06.530"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Welcome</arg>
+</arguments>
+<status status="PASS" starttime="20191106 15:42:06.531" endtime="20191106 15:42:06.611"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20191106 15:42:09.631" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20191106 15:42:06.611" endtime="20191106 15:42:09.631"></status>
+</kw>
+<status status="PASS" starttime="20191106 15:41:37.908" endtime="20191106 15:42:09.631"></status>
+</kw>
+<status status="PASS" starttime="20191106 15:41:37.908" endtime="20191106 15:42:09.631"></status>
 </kw>
 <kw name="End Web Test" library="common_res" type="teardown">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20191105 15:49:26.768" endtime="20191105 15:49:29.231"></status>
+<status status="PASS" starttime="20191106 15:42:09.631" endtime="20191106 15:42:11.938"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:49:26.767" endtime="20191105 15:49:29.231"></status>
+<status status="PASS" starttime="20191106 15:42:09.631" endtime="20191106 15:42:11.938"></status>
 </kw>
-<status status="PASS" starttime="20191105 15:48:56.820" endtime="20191105 15:49:29.232" critical="yes"></status>
+<status status="PASS" starttime="20191106 15:41:05.442" endtime="20191106 15:42:11.940" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20191105 15:48:56.541" endtime="20191105 15:49:29.237"></status>
+<status status="PASS" starttime="20191106 15:41:05.166" endtime="20191106 15:42:11.945"></status>
 </suite>
 <statistics>
 <total>

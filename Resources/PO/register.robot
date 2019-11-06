@@ -31,11 +31,33 @@ Fill My Form
     #Sleep   3s
     Input Text  id=registerPassword    @{REGDATA}[3]
     #Sleep   3s
+    #Click Button  //*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button
+    Sleep  1s
+    #Click Button  xpath=//button[@type='submit']
+    Click Button  //*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button  # no clue why but here you have to click this button two times to proceed
+    Sleep  1s
     Click Button  //*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[4]/div/button
-    #Sleep  3s
-    Click Button  xpath=//button[@type='submit']
+    #Sleep  30s
     Wait Until Page Contains  Complete your profile
-    Sleep  3s
+    #Sleep  3s
+
 
 Complete My Profile
+    Click Element  css=.form-group:nth-child(1) .btn
+    Sleep  3s
+    Click Element  css=li:nth-child(2) .text
+    Sleep  3s
+    Select From List By Label   id=registerRole    Headteacher
+    #headteacher   //*[@id="content"]/div/div/div/div[1]/div/form/div/div[1]/div[1]/div/div/ul/li[2]/a/span[2]
+    Sleep  3s
+    Click Element    css=.form-group:nth-child(4) .btn
+    Click Element    css=.show > .inner > .dropdown-menu > li:nth-child(2) .text
+    Select From List By Label   id=registerReferer    Email from The Key
+    Sleep  3s
+    Click Button    xpath=//button[@type='submit']
+    Wait Until Page Contains    Welcome
+    Sleep  3s
+    #Click Button    css=.btn-submit
+    #Click Button    css=.btn-submit
 
+Welcome

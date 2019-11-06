@@ -16,4 +16,11 @@ Select school
 Fill Reg Form
     Register.Fill My Form
 
+Complete Profile
+    Complete My Profile
+
+Access KSL from Reg
+    Welcome
+
+
 
