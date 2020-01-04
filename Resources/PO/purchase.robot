@@ -9,6 +9,7 @@ Library  Selenium2Library
 Library  BuiltIn
 
 *** Variables ***
+# naming convention: PO_Element_Description
 # /register/pricing/
 
 ${PRICING_BUTTON_PURCHASE_SUBMIT}           //*[@id="content"]/div/div[1]/div[2]/div/div/div[2]/div/div[2]/div/form/button

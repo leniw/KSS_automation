@@ -5,8 +5,12 @@ Test Setup  common_res.Begin Web Test
 Test Teardown   common_res.End Web Test
 
 *** Test Cases ***
-Logged out user should be able to log in
-    [Tags]    DEBUG
+User should be able to log in and out
+    [Tags]    Login
     KSL_res.Open Homepage
+    KSL_res.Go To Login Page
+    KSL_res.Log in
+    KSL_res.Log out
+
 
 *** Keywords ***

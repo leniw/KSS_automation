@@ -5,3 +5,8 @@
 Library  Selenium2Library
 Library  BuiltIn
 
+*** Variables ***
+# naming convention: PO_Element_Description
+
+
+*** Keywords ***

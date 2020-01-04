@@ -11,7 +11,11 @@ Library  Selenium2Library
 Library  BuiltIn
 
 *** Variables ***
+# naming convention: PO_Element_Description
+
 # /register/
+${REGISTER_ELEMENT_VERIFY}             //*[@id="content"]/div/div[1]/div/div[1]/div[1]/h1
+${REGISTER_TEXT_COMPLETEFORM}          Complete the form below to register.
 ${REGISTER_FIELD_POSTCODE}             //*[@id="newPostcode"]
 ${REGISTER_BUTTON_SUBMITPOSTCODE}      //*[@id="content"]/div/div[1]/div/div[1]/div[2]/form/div[2]/div[1]/button
 ${REGISTER_DROPDOWN_SCHOOLSELECT}      xpath=//div[2]/ul/li/a
@@ -43,6 +47,9 @@ ${POPUP_TEXT_SIDETOUR1}   Stay informed
 ##########################################################################
 # /register/
 ##########################################################################
+Verify Page Load
+    Wait Until Page Contains Element    ${REGISTER_ELEMENT_VERIFY}
+
 Choose My School
     [Arguments]  ${POSTCODE}
     Input Text  ${REGISTER_FIELD_POSTCODE}    ${POSTCODE}

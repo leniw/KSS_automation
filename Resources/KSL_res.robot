@@ -12,37 +12,50 @@ ${Duration_annualdebit}  //*[@id="content"]/div/div/div/div[1]/div[2]/form/div[5
 
 *** Keywords ***
 Open Homepage
-    Homepage.Loadme
+    homepage.Loadme
+    homepage.Verify Page Load
+
+Go To Login Page
+    login.Load login page
+    login.Verify page Load
+
+Log in
+    login.Enter and submit user details
+    homepage.Verify user is logged in
+Log out
+    homepage.Verify user is logged in
+    homepage.Log out user
 
 Go to registration page top link
-    Homepage.Go To Reg Page via Top Link
+    homepage.Go To Reg Page via Top Link
+    register.Verify Page Load
 
 Select school for purchase
-    Register.Choose My School  ${POSTCODE_CSPURCHASE}
+    register.Choose My School  ${POSTCODE_CSPURCHASE}
 
 Select school for preview
-    Register.Choose My School  ${POSTCODE_CSPREVIEW}
+    register.Choose My School  ${POSTCODE_CSPREVIEW}
 
 Fill Reg Form
-    Register.Fill My Form
+    register.Fill My Form
 
 Complete Profile on complete-profile page
-    Register.Complete My Profile
+    register.Complete My Profile
 
 Access KSL after completing Registration Journey
-    Register.Welcome
+    register.Welcome
 
 Use The Just Want To Pay Link
-    Register.Just Want To Pay
+    register.Just Want To Pay
 
 Buy KSL
-    Purchase.Join now on reg pricing page
+    purchase.Join now on reg pricing page
 
 Complete purchase form all
-    Purchase.Choose Membership duration and payment type  ${Duration_annualdebit}
+    purchase.Choose Membership duration and payment type  ${Duration_annualdebit}
     #Log to console  ${Duration_1y} not yet working
-    Purchase.Fill in purchase registration form
-    Purchase.Join now on reg confirm page
+    purchase.Fill in purchase registration form
+    purchase.Join now on reg confirm page
 
 
 
